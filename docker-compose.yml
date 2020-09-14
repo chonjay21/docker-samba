@@ -1,0 +1,22 @@
+version: '2.2'
+services:
+  samba:
+    container_name: samba
+    build: .
+    image: "chonjay21/samba:latest"
+    ports:
+      - 137:137
+      - 138:138
+      - 139:139
+      - 445:445
+    environment:
+      - FORCE_REINIT_CONFIG=false
+      - APP_USER_NAME=admin
+      - APP_USER_PASSWD=admin
+      - APP_UID=1000
+      - APP_GID=1000
+      - APP_CREATE_MASK=0660
+      - APP_DIRECTORY_MASK=0770
+      - TZ=America/Los_Angeles
+    volumes:
+      - /samba/data:/home/samba/data

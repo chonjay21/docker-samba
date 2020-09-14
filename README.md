@@ -47,6 +47,7 @@ docker run \
   -e FORCE_REINIT_CONFIG=false            `#optional` \
   -e APP_CREATE_MASK=0660                 `#optional` \
   -e APP_DIRECTORY_MASK=0770              `#optional` \
+  -e TZ=America/Los_Angeles               `#optional` \
   -p 137:137 \
   -p 138:138 \
   -p 139:139 \
@@ -74,6 +75,7 @@ services:
       - APP_CREATE_MASK=0660          #optional
       - APP_DIRECTORY_MASK=0770       #optional
       - FORCE_REINIT_CONFIG=false     #optional
+      - TZ=America/Los_Angeles        #optional
     ports:
       - "137:137"
       - "138:138"
@@ -97,6 +99,7 @@ services:
 | `-e APP_GID=1000` | for filesystem permission (groupid)  |  |
 | `-e APP_CREATE_MASK=0660` | for filesystem file permission mask with samba  | O |
 | `-e APP_DIRECTORY_MASK=0770` | for filesystem directory permission mask with samba  | O |
+| `-e TZ=America/Los_Angeles` | for timezone  | O |
 | `-e FORCE_REINIT_CONFIG=false` | if true, always reinitialize APP_USER_NAME etc ...  | O |
 | `-v /home/samba/data` | for data access with this container |  |
 
