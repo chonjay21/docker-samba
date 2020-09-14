@@ -1,0 +1,19 @@
+image: chonjay21/samba:latest
+manifests:
+  - image: chonjay21/samba:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: chonjay21/samba:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+
+image: chonjay21/samba:arm32v7-latest
+manifests:
+  - image: chonjay21/samba:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
