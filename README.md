@@ -1,4 +1,10 @@
 # [**Samba**](https://github.com/chonjay21/docker-samba)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/chonjay21/samba)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/chonjay21/samba)
+![Docker Pulls](https://img.shields.io/docker/pulls/chonjay21/samba)
+![GitHub](https://img.shields.io/github/license/chonjay21/docker-samba)
+![Docker Stars](https://img.shields.io/docker/stars/chonjay21/samba?style=social)
+![GitHub stars](https://img.shields.io/github/stars/chonjay21/docker-samba?style=social)
 ## Samba based on official latest alpine image
 * Support Authentication
 * Support creation|directory mask change
