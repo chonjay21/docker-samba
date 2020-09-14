@@ -3,6 +3,7 @@
 * Support Authentication
 * Support creation|directory mask change
 * Support UserID|GroupID change
+* Support custom TimeZone
 * Support custom event script override
 
 <br />
