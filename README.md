@@ -6,6 +6,7 @@
 ![Docker Stars](https://img.shields.io/docker/stars/chonjay21/samba?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/chonjay21/docker-samba?style=social)
 ## Samba based on official latest alpine image
+* Support Multiple architectures
 * Support Authentication
 * Support creation|directory mask change
 * Support UserID|GroupID change
@@ -30,6 +31,7 @@ The architectures supported by this image are:
 | :----: | --- |
 | x86-64 | amd64, latest |
 | armhf | arm32v7, latest |
+| arm64 | arm64v8, latest |
 
 <br />
 
@@ -79,10 +81,10 @@ services:
       - APP_USER_PASSWD=admin
       - APP_UID=1000
       - APP_GID=1000
-      - APP_CREATE_MASK=0660          #optional
-      - APP_DIRECTORY_MASK=0770       #optional
-      - FORCE_REINIT_CONFIG=false     #optional
-      - TZ=America/Los_Angeles        #optional
+      - APP_CREATE_MASK=0660              #optional
+      - APP_DIRECTORY_MASK=0770           #optional
+      - FORCE_REINIT_CONFIG=false         #optional
+      - TZ=America/Los_Angeles            #optional
     ports:
       - "137:137"
       - "138:138"
