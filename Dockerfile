@@ -23,7 +23,8 @@ ADD sources/ $SAMBA_SOURCE_DIR/
 
 # set permission
 RUN chmod 770 $SAMBA_SOURCE_DIR/*.sh; \
-	chmod 770 $SAMBA_SOURCE_DIR/eventscripts/*.sh
+	chmod 770 $SAMBA_SOURCE_DIR/eventscripts/*.sh; \
+	mkdir -p $SAMBA_DATA_PATH/data
 
 # Expose Samba ports
 EXPOSE 137 138 139 445
